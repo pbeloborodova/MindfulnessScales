@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<title>Code Generator for MTurk Workers</title>
+</head>
+
+<body>
+
+<p>Thank you for participating in the survey!</p>
+
+<p>Please copy the following code and paste it into the box on the HIT page</p>
+
+<script> 
+  
+// Function to generate random number 
+function randomNumber(min, max) { 
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+} 
+  
+document.write("Your code: ") 
+  
+// Function call
+document.write( randomNumber(500000, 700000) ); 
+</script>
+
+</body>
+</html>
